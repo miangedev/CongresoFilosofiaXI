@@ -39,7 +39,7 @@ Este sitio no es solo una vitrina digital, sino una herramienta pedagógica que:
 ---
 
 **Contacto del autor**:  
-[Github | CongresoFilosofiaXI]  
+[Github | miangedev]  
 [Correo | angeloso74@hotmail.com]  
 
 ---
