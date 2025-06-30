@@ -1,6 +1,6 @@
 # Congreso Filosófico: "Razonamiento vs Inteligencia Artificial"
 
-**Sitio web oficial del Congreso Filosófico 2025 – IE José Celestino Mutis**  
+**Sitio web oficial del Congreso Filosófico 2024– IE José Celestino Mutis**  
 **Desarrollado por: Miguel Angel Osorio Orduz, Juan Camilo Arciniegas Medina, Miguel Angel Neira Martinez**
 
 ## 🌐 Descripción General
