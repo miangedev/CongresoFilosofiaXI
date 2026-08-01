@@ -31,7 +31,7 @@ El Congreso Filosófico es un espacio académico donde estudiantes y docentes pr
 
 ## Equipo
 
-Proyecto fundado por **Juan Camilo Arciniegas Medina** y **Miguel Angel Neira Martinez**.
+Proyecto fundado por **Miguel Angel Osorio Orduz**, **Juan Camilo Arciniegas Medina** y **Miguel Angel Neira Martinez**.
 
 Actualmente mantenido por **Miguel Angel Osorio Orduz**.
 
