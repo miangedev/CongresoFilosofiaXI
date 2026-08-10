@@ -215,7 +215,33 @@ gtag("config", "GT-WPDPM4BW");
     max-width: 100% !important;
   }
 }
-</style></head>
+
+@media (orientation: portrait), (max-width: 768px) {
+  /* Download button: icon only on mobile */
+  #cf-app .btn-download {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  #cf-app .btn-download svg {
+    flex-shrink: 0 !important;
+    width: 20px !important;
+    height: 20px !important;
+  }
+  /* Hide the "Descargar" text */
+  #cf-app .btn-download br,
+  #cf-app .btn-download {
+    font-size: 0 !important;
+  }
+  #cf-app .btn-download svg {
+    font-size: initial !important;
+  }
+}</style></head>
 
 <body class="wp-singular page-template page-template-full-width page page-id-94 wp-theme-rufous">
 	<div id="page-top" tabindex="-1"></div>
