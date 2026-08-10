@@ -175,11 +175,36 @@ gtag("config", "GT-WPDPM4BW");
   }
 }
 </style><style id="catf-mobile-fix">
-@media (max-width: 1200px) and (orientation: portrait) {
-  .cf-table { --grid-column: 1 !important; }
-}
-@media (max-width: 768px) {
-  .cf-table { --grid-column: 1 !important; }
+@media (orientation: portrait), (max-width: 768px) {
+  #cf-app .cf-table {
+    width: 100% !important;
+    table-layout: fixed !important;
+    overflow-x: hidden !important;
+  }
+  /* Hide Size and Counter columns */
+  #cf-app .cf-table thead th:nth-child(2),
+  #cf-app .cf-table thead th:nth-child(3),
+  #cf-app .cf-table tbody td:nth-child(2),
+  #cf-app .cf-table tbody td:nth-child(3) {
+    display: none !important;
+  }
+  /* Title takes most space, Link fixed width */
+  #cf-app .cf-table thead th:nth-child(1),
+  #cf-app .cf-table tbody td:nth-child(1) {
+    width: 75% !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+  }
+  #cf-app .cf-table thead th:nth-child(4),
+  #cf-app .cf-table tbody td:nth-child(4) {
+    width: 25% !important;
+    text-align: center !important;
+  }
+  /* Parent containers no horizontal scroll */
+  #cf-app, .cf-table-wrapper, [class*="catf"] {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+  }
 }
 </style></head>
 
