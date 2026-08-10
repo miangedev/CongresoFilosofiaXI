@@ -807,14 +807,5 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 //# sourceURL=//wp-includes/js/wp-emoji-loader.min.js
 /* ]]> */
 </script>
-<script id="mobile-menu-fix">(function(){function i(){var b=document.querySelectorAll(".kubio-offscreen-icon-wrapper");b.forEach(function(btn){var tId=btn.getAttribute("data-target-id");var oId=btn.getAttribute("data-offcanvas-overlay-id");var panel=document.getElementById(tId);var overlay=oId?document.getElementById(oId):null;if(!panel)return;
-// Remove hide class and set up panel for slide-in from right
-panel.classList.remove("hide");
-panel.style.cssText="position:fixed!important;top:0!important;right:-310px!important;left:auto!important;width:300px!important;height:100%!important;overflow-y:auto!important;z-index:9999!important;transition:right 0.35s ease!important;";
-if(overlay){overlay.style.cssText="position:fixed;inset:0;z-index:9998;display:none;background:rgba(0,0,0,0.5);";}
-function o(){panel.style.right="0";if(overlay)overlay.style.display="block";document.documentElement.style.overflow="hidden";}
-function c(){panel.style.right="-310px";if(overlay)overlay.style.display="none";document.documentElement.style.overflow="";}
-btn.addEventListener("click",function(e){e.stopPropagation();var open=panel.style.right==="0px"||panel.style.right==="0";open?c():o();});
-if(overlay)overlay.addEventListener("click",c);});}
-if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",i);}else{i();}})();</script></body>
+<script id="mobile-menu-fix">(function(){function init(){var btns=document.querySelectorAll(".kubio-offscreen-icon-wrapper");btns.forEach(function(btn){var tId=btn.getAttribute("data-target-id");var oId=btn.getAttribute("data-offcanvas-overlay-id");var panel=document.getElementById(tId);var overlay=oId?document.getElementById(oId):null;if(!panel)return;panel.style.transition="transform 0.3s ease";panel.style.transform="translateX(100%)";function open(){panel.classList.remove("hide");setTimeout(function(){panel.style.transform="translateX(0)";},10);if(overlay){overlay.style.opacity="1";overlay.style.visibility="visible";overlay.style.zIndex="2000000";}}function close(){panel.style.transform="translateX(100%)";if(overlay){overlay.style.opacity="0";overlay.style.visibility="hidden";}setTimeout(function(){panel.classList.add("hide");},300);}btn.addEventListener("click",function(e){e.stopPropagation();panel.classList.contains("hide")?open():close();});if(overlay)overlay.addEventListener("click",close);});}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",init);}else{init();}})();</script></body>
 </html><!-- Page cached by LiteSpeed Cache 7.8 on 2026-06-29 22:57:51 -->
